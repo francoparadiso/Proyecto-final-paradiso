@@ -1,0 +1,128 @@
+/* Reseteo y configuraciones básicas */
+* {
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    border-color: black;
+    
+}
+/* Logo */
+/* INDEX */
+
+.grid {
+    display: grid; 
+    grid-template-columns: 1fr 1.2fr 1.1fr 1fr;  
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Logo HomeCooking HomeCooking ."
+      ". . . ."
+      ". . . ."
+      ". . . ."; 
+      justify-items: stretch;
+      align-items: center;
+  }
+  .Logo { grid-area: Logo; }
+  .HomeCooking { grid-area: HomeCooking; }
+
+.nuevo-logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Título y nombre de página */
+h1 {
+    display: flex;
+    text-align: center;
+    color: rgb(247, 237, 237);
+    background-color: palevioletred;
+    text-align: center;
+    max-width: 100vw;
+    flex-direction: column;
+}
+.nav h2 {display: flex;
+    text-align: center;
+    color: rgb(247, 237, 237);
+
+}
+
+h3 {
+    display: flex;
+    text-align: center;
+    color: rgb(247, 237, 237);
+   flex-direction: column;
+    background-color: palevioletred;
+    text-align: center;
+}
+/* Configuración de la barra de headeregación */
+.header {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: hsl(338, 49%, 43%);
+    
+    
+}
+.header ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    color: white;
+    justify-content: center;
+     
+}
+.header ul li a {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-style: oblique;
+    border: 2px;
+    border-color: white;
+
+}
+
+.menu-desplegable label {
+    display: block;
+    margin-bottom: 10px;
+
+}
+.imagenes-principales {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.imagenes-principales img {
+    width: 200px;
+    height: 400px;
+}
+
+
+input {
+    margin: 20px;
+    display: block;
+    margin-bottom: 10px
+}
+
+body{
+    background-color: palevioletred;
+    
+}
+
+
+.footer {
+    background-color: hsl(338, 49%, 43%);
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer img {
+    height: 60px;
+}
+
+
+/* Productos */
+.carrusel-productos img {
+    width: 250px;
+  height: 250px;
+  transition:none;
+  justify-content: center;
+  align-items: center;
+}
