@@ -116,6 +116,23 @@ body{
 .footer img {
     height: 60px;
 }
+.cupcake-button {
+    background-image:url(../Recursos/cupcake\ icon.png);
+    background-color: #ffcc99; /* Color del cupcake */
+    border: none; /* Sin borde */
+    width: 130px;
+    height: 130px;
+    color: rgb(5, 5, 5); /* Texto en negro */
+    font-weight: bold;
+    -webkit-text-fill-color: rgb(245, 245, 245);
+    -webkit-text-stroke: 3px black;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 40px; /* Tamaño de fuente */
+    border-radius: 60px; /* Borde redondeado para dar forma de cupcake */
+    cursor: pointer; /* Cambio de cursor al pasar por encima */
+    /* Agrega otros estilos según tus preferencias */
+}
+
 
 
 /* Productos */
