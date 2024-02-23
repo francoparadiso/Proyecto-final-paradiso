@@ -53,7 +53,7 @@ h3 {
     background-color: palevioletred;
     text-align: center;
 }
-/* Configuración de la barra de headeregación */
+/* Configuración de la barra de navegación */
 .header {
     font-family: 'Courier New', Courier, monospace;
     background-color: hsl(338, 49%, 43%);
@@ -116,29 +116,34 @@ body{
 .footer img {
     height: 60px;
 }
-.cupcake-button {
-    background-image:url(../Recursos/cupcake\ icon.png);
-    background-color: #ffcc99; /* Color del cupcake */
-    border: none; /* Sin borde */
+/* Cupcake button */
+.cupcake-container {
+    text-align: center; /* Centra horizontalmente el cupcake */
+    margin-top: 20px; /* Espaciado entre el formulario y el botón */
+  }
+  
+  .cupcake-button {
+    background-image: url(../Recursos/cupcake\ icon.png);
+    background-color: #ffcc99; /* Color de fondo del cupcake */
     width: 130px;
     height: 130px;
     color: rgb(5, 5, 5); /* Texto en negro */
     font-weight: bold;
-    -webkit-text-fill-color: rgb(245, 245, 245);
-    -webkit-text-stroke: 3px black;
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 40px; /* Tamaño de fuente */
+    -webkit-text-fill-color: rgb(245, 245, 245); 
+    -webkit-text-stroke: 3px black;     /* Con esto hacemos el contorno de las letras del botón*/
+    font-size: 40px; 
     border-radius: 60px; /* Borde redondeado para dar forma de cupcake */
-    cursor: pointer; /* Cambio de cursor al pasar por encima */
-    /* Agrega otros estilos según tus preferencias */
-}
+    cursor: pointer;
+    display: inline-block; /* Se cambia a inline-block para que se centre correctamente */
+    /* Ya no es necesario usar display: grid, justify-content o align-items */
+  }
 
 
 
 /* Productos */
 .carrusel-productos img {
-    width: 250px;
-  height: 250px;
+    width: 30vw;
+  height: 50vw;
   transition:none;
   justify-content: center;
   align-items: center;

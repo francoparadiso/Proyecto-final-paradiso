@@ -9,25 +9,29 @@
 </head>
 
 <body>
-  <!-- !-- Logo que va al inicio -->
-  <a href="../index.html">
-    <img src="../Recursos/nuevo-logo.jpg" alt="nuevo-logo">
-  </a>
-  <!-- Header -->
-  <header class="header">
-    <h1>Pedidos</h1>
-    <!-- Menú de Navegación -->
-    <nav class="nav">
-      <ul>
-        <li>
-          <a href="../pages/productos.html">Productos</a>
-          <a href="../pages/quienes-somos.html">Quienes somos?</a>
-          <a href="../pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="container">
+    <!-- Logo que va al inicio -->
+    <a href="../index.html" class="logo-link">
+      <img src="../Recursos/nuevo-logo.jpg" alt="nuevo-logo" class="logo">
+    </a>
 
-    <h2> Armá tu propio pedido!</h2>
+    <!-- Header -->
+    <header class="header">
+      <h1>Pedidos</h1>
+      <!-- Menú de Navegación -->
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="../pages/productos.html">Productos</a>
+            <a href="../pages/quienes-somos.html">Quienes somos?</a>
+            <a href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h2>Armá tu propio pedido!</h2>
+    </header>
+
   </header class="header">
   <!-- Menú desplegable  PREGUNTAR A YESSI POR LOS GUSTOS DE LAS COSAS-->
   <form action="#" class="menu-desplegable">
@@ -68,32 +72,30 @@
     <select name="adicional" id="adicional">
       <option value="opcion1">Opción 1</option>
       <option value="opcion2">Opción 2</option>
-      <option value="opcion1">Opción 3</option>
+      <option value="opcion1">Opción 3</option>   
       <option value="opcion2">Opción 4</option>
     </select>
 
     <input type="submit" value="Enviar pedido" />
   </form>
 
+    <!-- Cupcake button -->
+    <div class="cupcake-container">
+      <a class="Volver-inicio" href="../index.html">
+        <button class="cupcake-button">Home</button>
+      </a>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
-           <!-- Cupcake button -->
-        <ul>
-          <li>
-              <a class="Volver-inicio" href="../index.html">
-                  <button class="cupcake-button">
-                      Home
-                  </button>
-              </a>
-          </li>
-      </ul>
     <!-- Redes sociales -->
     <ul>
       <img src="../Recursos/whatsap.png" alt="">
       <img src="../Recursos/face.png" alt="">
-      <img src="../Recursos/instagram.jpg" alt="">
+      <img src="../Recursos/icono de instagram.png" alt="instagram">
     </ul>
+  </footer>
 </body>
 
 </html>
