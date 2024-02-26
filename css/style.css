@@ -27,9 +27,9 @@
     grid-area: Logo;
 }
 .logo-index {
-    border-radius: 80%; /* Esto hace que la imagen sea circular */
-    width: 200px; /* Ajusta el ancho según tu diseño */
-    height: 200px; /* Ajusta la altura según tu diseño */
+    border-radius: 80%; /* Esto hace que la imagen sea circular HAY QUE EXPLOTARLO AL MÁXIMO!*/
+    width: 200px; 
+    height: 200px; 
 }
 
 
@@ -182,21 +182,29 @@ body {
     font-size: 20px;
     border-radius: 50%;
     cursor: pointer;
-    display: flex; /* Utiliza flexbox */
+    display: flex; /* Ponemos flexbox */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     background-size: 85%;
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center; /* Alinea el texto en el centro */
+    text-align: center; 
 }
 
-
+/* RESPONSIVE DEL INDEX */
 @media (max-width: 768px) {
     /* Cambios para pantallas más pequeñas */
-
+#links-header {
+    grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
     .grid {
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .imagenes-principales {
@@ -214,6 +222,7 @@ body {
         width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
         height: auto; /* Permite que la altura se ajuste automáticamente */
     }
+   
 
     .imagenes-portada figcaption {
         position: static;
@@ -244,3 +253,55 @@ body {
     justify-content: center;
     align-items: center;
 }
+.carrusel-productos  {
+    width: 30vw;
+    height: 50vw;
+    transition: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pedidos */
+#h2-pedidos { color: white;
+    font-size: large;
+    /* Color del texto */
+    padding: 5px;
+    /* Añadimos un poco de espacio alrededor del texto */
+    text-align: center;
+    /* Centramos el texto horizontalmente */
+    font-family: 'Verdana', Courier, monospace;
+
+}
+
+
+/* Quienes somos? */
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#descripcion-familia {
+    
+    color: white;
+    font-family: "Kalam", cursive;
+    font-weight: 300 bold;
+    font-style: normal;
+    max-width: 70vw;
+    display: flex;
+    
+}
+.grid-quienes-somos {  display: grid;
+   
+  }
+  
+  .Descripcion { grid-area: Descripcion; }
+  
+  .Familia-feliz { 
+    grid-area: Familia-feliz; }
+
+    #foto-rochanos{
+        height: 15vw;
+        border-radius: 30px;
+    }
+  
