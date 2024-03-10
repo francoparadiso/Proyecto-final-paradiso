@@ -9,31 +9,31 @@
 </head>
 
 <body>
-  <div class="container">
-   <!-- !-- Logo que va al inicio -->
-   <a href="../index.html" class="nuevo-logo">
-    <img id="logo-index" class="logo-index" src="../Recursos/nuevo-logo.jpg" alt="nuevo-logo">
-</a>
-
-    <!-- Header -->
-    <header class="header">
-      <h1>Pedidos</h1>
-      <!-- Menú de Navegación -->
-      <nav class="nav">
-        <ul>
-          <li>
-            <a href="../pages/productos.html">Productos</a>
-            <a href="../pages/quienes-somos.html">Quienes somos?</a>
-            <a href="../pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-
-      <h2>Armá tu propio pedido!</h2>
-    </header>
+  
+  <!-- Header -->
+  <header class="header">
+    <!-- !-- Logo que va al inicio -->
+    <a href="../index.html" class="nuevo-logo">
+      <img id="logo-index" class="logo-index" src="../Recursos/nuevo-logo.jpg" alt="nuevo-logo">
+    </a>
+    <h1>Pedidos</h1>
+    <!-- Menú de Navegación -->
+    <nav class="nav">
+      <ul>
+        <li id="links-header">
+          <a href="../pages/productos.html">Productos</a>
+          <a href="../pages/quienes-somos.html">Quienes somos?</a>
+          <a href="../pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <h2 id="h2-pedidos" >Armá tu propio pedido!</h2>
+  </header>
+  <main class="container">
 
     </header class="header">
-    <!-- Menú desplegable  PREGUNTAR A YESSI POR LOS GUSTOS DE LAS COSAS-->
+    <!-- Menú desplegable con gustos -->
     <form action="#" class="menu-desplegable">
       <label for="categoria">Categoría:</label>
       <select name="categoria" id="categoria">
@@ -49,31 +49,31 @@
         <option value="opcion1">Chocolate</option>
         <option value="opcion2">Vainilla</option>
         <option value="opcion1">Frutilla</option>
-        <option value="opcion2">Opción 4</option>
+        <option value="opcion2">Crema</option>
       </select>
 
       <label for="relleno">Relleno:</label>
       <select name="relleno" id="relleno">
-        <option value="opcion1">Opción 1</option>
-        <option value="opcion2">Opción 2</option>
-        <option value="opcion1">Opción 3</option>
-        <option value="opcion2">Opción 4</option>
+        <option value="opcion1">Avellana</option>
+        <option value="opcion2">Nutella</option>
+        <option value="opcion1">Frutos Rojos</option>
+        <option value="opcion2">Merengue</option>
       </select>
 
       <label for="arriba">Arriba:</label>
       <select name="arriba" id="arriba">
-        <option value="opcion1">Opción 1</option>
-        <option value="opcion2">Opción 2</option>
-        <option value="opcion1">Opción 3</option>
-        <option value="opcion2">Opción 4</option>
+        <option value="opcion1">Frutos Secos</option>
+        <option value="opcion2">Oreo</option>
+        <option value="opcion1">Bombones</option>
+        <option value="opcion2">Salsa a elección</option>
       </select>
 
       <label for="adicional">Adicional:</label>
       <select name="adicional" id="adicional">
-        <option value="opcion1">Opción 1</option>
-        <option value="opcion2">Opción 2</option>
-        <option value="opcion1">Opción 3</option>
-        <option value="opcion2">Opción 4</option>
+        <option value="opcion1">Temáticas</option>
+        <option value="opcion2">Casamientos</option>
+        <option value="opcion1">Fiestas</option>
+        <option value="opcion2">Eventos</option>
       </select>
 
       <input type="submit" value="Enviar pedido" />
@@ -85,7 +85,7 @@
         <button class="cupcake-button">Home</button>
       </a>
     </div>
-  </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">

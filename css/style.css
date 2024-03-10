@@ -26,10 +26,12 @@
 .Logo {
     grid-area: Logo;
 }
+
 .logo-index {
-    border-radius: 80%; /* Esto hace que la imagen sea circular */
-    width: 200px; /* Ajusta el ancho según tu diseño */
-    height: 200px; /* Ajusta la altura según tu diseño */
+    border-radius: 80%;
+    /* Esto hace que la imagen sea circular HAY QUE EXPLOTARLO AL MÁXIMO!*/
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -40,12 +42,14 @@
 .nuevo-logo {
     display: flex;
     justify-content: center;
+    background-color: palevioletred;
 }
 
 /* Título y nombre de página */
 h1 {
     display: flex;
     text-align: center;
+    font-family: 'Verdana', sans-serif, monospace;
     color: rgb(247, 237, 237);
     background-color: palevioletred;
     text-align: center;
@@ -71,7 +75,7 @@ h3 {
 
 /* Configuración de la barra de navegación */
 .header {
-    font-family: 'Verdana', Courier, monospace;
+    font-family: 'Verdana', sans-serif, monospace;
     background-color: hsl(338, 49%, 43%);
     flex-wrap: wrap;
 
@@ -153,7 +157,6 @@ body {
 
 }
 
-
 .footer {
     background-color: hsl(338, 49%, 43%);
     display: flex;
@@ -164,9 +167,12 @@ body {
     height: 60px;
 }
 
+/* CONFIGURACIÓN DEL BOTÓN CUPCAKE */
 .cupcake-container {
-    text-align: center; /* Centra horizontalmente el botón */
-    margin-top: 20px; /* Espaciado entre el formulario y el botón */
+    text-align: center;
+    /* Centra horizontalmente el botón */
+    margin-top: 20px;
+    /* Espaciado entre el formulario y el botón */
 }
 
 .cupcake-button {
@@ -182,21 +188,34 @@ body {
     font-size: 20px;
     border-radius: 50%;
     cursor: pointer;
-    display: flex; /* Utiliza flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    display: flex;
+    /* Ponemos flexbox */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
     background-size: 85%;
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center; /* Alinea el texto en el centro */
+    text-align: center;
 }
 
-
+/* RESPONSIVE DEL INDEX */
 @media (max-width: 768px) {
+
     /* Cambios para pantallas más pequeñas */
+    #links-header {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .grid {
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .imagenes-principales {
@@ -206,14 +225,18 @@ body {
     }
 
     .imagenes-portada {
-        width: 80vw; /* Ajusta el ancho según sea necesario */
+        width: 80vw;
+        /* Ajusta el ancho según sea necesario */
         margin-bottom: 20px;
     }
 
     .imagenes-portada img {
-        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-        height: auto; /* Permite que la altura se ajuste automáticamente */
+        width: 100%;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente */
     }
+
 
     .imagenes-portada figcaption {
         position: static;
@@ -222,7 +245,8 @@ body {
         /* Eliminamos el fondo semi-transparente */
         padding: 0;
         /* Eliminamos el espacio alrededor del texto */
-        text-align: center; /* Centramos el texto */
+        text-align: center;
+        /* Centramos el texto */
     }
 
     .footer {
@@ -243,4 +267,81 @@ body {
     transition: none;
     justify-content: center;
     align-items: center;
+}
+
+.carrusel-productos {
+    width: 30vw;
+    height: 50vw;
+    transition: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pedidos */
+#h2-pedidos {
+    color: white;
+    font-size: large;
+    /* Color del texto */
+    padding: 5px;
+    /* Añadimos un poco de espacio alrededor del texto */
+    text-align: center;
+    /* Centramos el texto horizontalmente */
+    font-family: 'Verdana', Courier, monospace;
+
+}
+
+
+/* Quienes somos? */
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#descripcion-familia {
+
+    color: white;
+    font-family: "Kalam", cursive;
+    font-weight: 300 bold;
+    font-style: normal;
+    max-width: 70vw;
+    display: flex;
+
+}
+
+.grid-quienes-somos {
+    display: grid;
+
+}
+
+.Descripcion {
+    grid-area: Descripcion;
+}
+
+.Familia-feliz {
+    grid-area: Familia-feliz;
+}
+
+#foto-rochanos {
+    height: 15vw;
+    border-radius: 30px;
+}
+
+
+/* Contacto */
+.div-contacto {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mapa-google-earth {
+    padding: 0;
+    margin: 20px;
+    width: 600px;
+    height: 450px;
+    display: block;
+    border: 5px solid;
+    border-color: wheat;
+    border-collapse: inherit;
 }

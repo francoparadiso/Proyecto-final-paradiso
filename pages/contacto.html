@@ -9,17 +9,17 @@
 </head>
 
 <body>
-    <!-- !-- Logo que va al inicio -->
-   <a href="../index.html" class="nuevo-logo">
-                <img id="logo-index" class="logo-index" src="../Recursos/nuevo-logo.jpg" alt="nuevo-logo">
-            </a>
-    <!-- Header -->
     <header class="header">
+    <!-- !-- Logo que va al inicio -->
+    <a href="../index.html" class="nuevo-logo">
+        <img id="logo-index" class="logo-index" src="../Recursos/nuevo-logo.jpg" alt="nuevo-logo">
+    </a>
+    <!-- Header -->
         <h1>Contacto</h1>
         <!-- Menu de Navegación -->
         <nav class="nav">
             <ul>
-                <li>
+                <li id="links-header">
                     <a href="../pages/productos.html">Productos</a>
                     <a href="../pages/quienes-somos.html">Quienes somos?</a>
                     <a href="../pages/pedidos.html">Pedidos</a>
@@ -28,29 +28,35 @@
         </nav>
     </header>
 
-    <!-- Formulario de contacto -->
-    <form id="contactForm">
-        <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="phone">Número de Teléfono:</label><br>
-        <input type="tel" id="phone" name="phone"><br>
-        <label for="message">Mensaje:</label><br>
-        <textarea id="message" name="message"></textarea><br>
-        <input type="submit" value="Enviar">
-    </form>
+    <main class="div-contacto">
+        <!-- Formulario de contacto -->
+        <form id="contactForm">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Número de Teléfono:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <!-- Mapita de ubicación -->
+        <iframe title="mapa-google-earth" class="mapa-google-earth"  allowfullscreen="" 
+        referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349.7572987162244!2d-54.311715772688004!3d-34.47807251134792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9574bb9af74217dd%3A0x62cae80c414ddda7!2sRuta%209-Coronel%20Leonardo%20Olivera%2040%2C%2027000%20Rocha%2C%20Departamento%20de%20Rocha!5e1!3m2!1ses-419!2suy!4v1708979288771!5m2!1ses-419!2suy">
+            Mapa</iframe>
+        <!-- BANNER CON IMAGEN -->
+    </main>
+
     <!-- Cupcake button -->
     <div class="cupcake-container">
         <a class="Volver-inicio" href="../index.html">
             <button class="cupcake-button">Home</button>
         </a>
     </div>
-    </div>
     <!-- FOOTER -->
     <footer class="footer">
-
-
 
         <!-- Redes Sociales -->
 
@@ -60,9 +66,7 @@
             <img src="../Recursos/icono de instagram.png" alt="instagram">
         </div>
 
-
     </footer>
-
 
 </body>
 
