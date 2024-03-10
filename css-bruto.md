@@ -175,13 +175,13 @@ body {
 
 /* CONFIGURACIÓN DEL BOTÓN CUPCAKE */
 .cupcake-container {
-
+    
     text-align: center;
     margin-top: 20px;
     width: 100px;
     height: 100px;
     transform: translateX(46vw) translateY(-2vw);
-
+    
 }
 
 .cupcake-button {
