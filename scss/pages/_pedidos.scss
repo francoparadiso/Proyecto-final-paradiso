@@ -1,0 +1,55 @@
+/* Pedidos */
+#h2-pedidos {
+    color: white;
+    font-size: large;
+    padding: 5px; // Añadimos un poco de espacio alrededor del texto
+    text-align: center; // Centramos el texto horizontalmente
+    font-family: 'Verdana', Courier, monospace;
+}
+
+#descripcion-familia {
+    color: white;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    font-style: oblique;
+    max-width: 70vw;
+    font-size: larger;
+    display: flex;
+}
+
+.grid-quienes-somos {
+    display: grid;
+
+    .Descripcion {
+        grid-area: Descripcion;
+    }
+
+    .Familia-feliz {
+        grid-area: Familia-feliz;
+    }
+}
+
+#foto-rochanos {
+    height: 15vw;
+    border-radius: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#ingredientes {
+    width: 30vw;
+    height: 20vw;
+}
+
+.menu-desplegable label {
+    display: block;
+    margin-bottom: 10px;
+    color: wheat;
+    font-weight: bold;
+
+}

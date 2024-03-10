@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin: 0 auto;
+    font-family: 'Verdana', sans-serif, monospace;
+    background-color: hsl(338, 49%, 43%);
+    flex-wrap: wrap;
+    border-radius: 100px;
+    max-width: 50vw;
+
+    #logo-index {
+        border-radius: 150px;
+    }
+
+    ul {
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: baseline;
+            color: white;
+            justify-content: center;
+
+            a {
+                display: flex;
+                background-color: rgba(226, 201, 201, 0);
+                font-family: 'Verdana', sans-serif, monospace;
+                font-size: 18px;
+                color: white;
+                font-style: oblique;
+                border: 2px;
+                border-color: white;
+                text-decoration: none;
+                border-radius: 10px;
+                color: wheat; /* Quita el subrayado predeterminado */
+                
+                &:hover {
+                    background-color: rgba(206, 59, 169, 0.623); /* Cambia el color al pasar el mouse sobre el enlace */
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.imagenes-principales {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.imagenes-principales img {
+    width: 20vw;
+    height: 400px;
+}
+
+.imagenes-portada {
+    position: relative;
+    /* Hacemos que el posicionamiento relativo sea para que podamos posicionar el figcaption */
+}
+
+.logo-index {
+        border-radius: 150px;
+
+}
+
+.grid {
+    max-height: 350px;
+}

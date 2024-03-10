@@ -1,0 +1,25 @@
+/* Contacto */
+.div-contacto {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+
+    .mapa-google-earth {
+        padding: 0;
+        margin: 20px;
+        width: 600px;
+        height: 450px;
+        display: block;
+        border: 5px solid;
+        border-color: wheat;
+        border-collapse: inherit;
+    }
+
+    .carrusel-productos {
+        width: 30vw;
+        height: 50vw;
+        transition: none;
+        justify-content: center;
+        align-items: center;
+    }
+}

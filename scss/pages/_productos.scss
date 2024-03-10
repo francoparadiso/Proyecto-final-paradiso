@@ -1,0 +1,22 @@
+/* Productos */
+.carrusel-productos img {
+    width: 30vw;
+    height: 50vw;
+    transition: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel-productos {
+    width: 30vw;
+    height: 50vw;
+    transition: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-productos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
