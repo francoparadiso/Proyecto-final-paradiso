@@ -8,11 +8,13 @@
     flex-wrap: wrap;
     border-radius: 100px;
     max-width: 50vw;
+    border: 2px solid;
+    border-color: wheat;
 
-    
-    h1{
-        border-radius: 15px;
+    h1 {
+        border-radius: inherit; // Hereda el radio de borde de .header
     }
+
     ul {
         li {
             display: flex;
@@ -41,4 +43,7 @@
             }
         }
     }
+}
+#logo-index {
+    border-radius: 100px;
 }

@@ -1,21 +1,28 @@
+$logo-size: 200px; // Tamaño del logo
+
 .imagenes-principales {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-}
-.imagenes-principales img {
-    width: 20vw;
-    height: 400px;
+
+    img {
+        width: 20vw;
+        height: 400px;
+    }
 }
 
 .imagenes-portada {
     position: relative;
-    /* Hacemos que el posicionamiento relativo sea para que podamos posicionar el figcaption */
-}
 
-.logo-index {
-        border-radius: 150px;
-
+    figcaption {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: wheat;
+        font-size: large;
+        padding: 5px;
+        text-align: center;
+        font-family: 'Verdana', Courier, monospace;
+    }
 }
 
 .grid {
@@ -29,85 +36,15 @@
         ". . . .";
     justify-items: stretch;
     align-items: center;
-}
-#logo-index {
-    width: 200px;
-    height: 200px;
-    border-radius: 80%;
-    width: 200px;
-    height: 200px;
-    border-radius: 150px;
-}
-.HomeCooking {
-    grid-area: HomeCooking;
-}
-/* Texto debajo de las imágenes de la portada */
-.imagenes-portada figcaption {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: wheat;
-    font-size: large;
-    padding: 5px;
-    text-align: center;
-    font-family: 'Verdana', Courier, monospace;
-}
 
-/* RESPONSIVE DEL INDEX */
-@media (max-width: 768px) {
-
-    /* Cambios para pantallas más chicas */
-    #links-header {
-        grid-template-columns: 1fr;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #logo-index {
+        width: $logo-size;
+        height: $logo-size;
+        border-radius: 80%;
     }
 
-    #links-header {
-        grid-template-columns: 1fr;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagenes-principales {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagenes-portada {
-        width: 80vw;
-        margin-bottom: 20px;
-    }
-
-    .imagenes-portada img {
-        width: 100%;
-        height: auto;
-    }
-
-
-
-    .imagenes-portada figcaption {
-        position: static;
-        background-color: transparent;
-        padding: 0;
-        text-align: center;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer img {
-        margin-bottom: 10px;
+    .HomeCooking {
+        grid-area: HomeCooking;
     }
 }
+
