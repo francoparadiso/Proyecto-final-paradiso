@@ -46,12 +46,6 @@
     grid-area: Familia-feliz;
 }
 
-#foto-rochanos {
-    height: 15vw;
-    border-radius: 30px;
-}
-
-
 .grid-quienes-somos {
     display: grid;
 
@@ -67,5 +61,8 @@
 
 #foto-rochanos {
     height: 15vw;
-    border-radius: 30px;
+    border-radius: 300px;
+    border: solid;
+    padding: 0;
+    border-color: wheat;
 }

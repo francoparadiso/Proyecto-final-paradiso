@@ -86,26 +86,6 @@
   text-align: center;
   font-family: 'Verdana', Courier, monospace; }
 
-#descripcion-familia {
-  color: white;
-  font-family: "Kalam", cursive;
-  font-weight: bold;
-  font-style: oblique;
-  max-width: 70vw;
-  font-size: larger;
-  display: flex; }
-
-.grid-quienes-somos {
-  display: grid; }
-  .grid-quienes-somos .Descripcion {
-    grid-area: Descripcion; }
-  .grid-quienes-somos .Familia-feliz {
-    grid-area: Familia-feliz; }
-
-#foto-rochanos {
-  height: 15vw;
-  border-radius: 30px; }
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -113,13 +93,47 @@
 
 #ingredientes {
   width: 30vw;
-  height: 20vw; }
+  height: 20vw;
+  border-radius: 200px;
+  border: solid;
+  padding: 0;
+  border-color: wheat; }
 
 .menu-desplegable label {
   display: block;
   margin-bottom: 10px;
   color: wheat;
   font-weight: bold; }
+
+/* Pedidos */
+.container {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between; }
+  .container select,
+  .container input[type="text"],
+  .container input[type="email"],
+  .container input[type="tel"],
+  .container textarea {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: wheat;
+    padding: 4px;
+    margin-bottom: 10px; }
+  .container input[type="submit"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    background-color: #a3385f;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer; }
+  .container label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; }
 
 /* Quienes somos? */
 .satisfy-regular {
@@ -157,10 +171,6 @@
 .Familia-feliz {
   grid-area: Familia-feliz; }
 
-#foto-rochanos {
-  height: 15vw;
-  border-radius: 30px; }
-
 .grid-quienes-somos {
   display: grid; }
 
@@ -172,7 +182,10 @@
 
 #foto-rochanos {
   height: 15vw;
-  border-radius: 30px; }
+  border-radius: 300px;
+  border: solid;
+  padding: 0;
+  border-color: wheat; }
 
 .imagenes-principales {
   display: flex;
