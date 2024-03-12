@@ -1,10 +1,11 @@
+// Definir variables
 $logo-size: 250px; // Tamaño del logo
 
+// Estilos para las imágenes principales
 .imagenes-principales {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    
 
     img {
         width: 20vw;
@@ -16,9 +17,9 @@ $logo-size: 250px; // Tamaño del logo
     }
 }
 
+// Estilos para las imágenes de portada
 .imagenes-portada {
     position: relative;
-    
 
     figcaption {
         width: 100%;
@@ -32,6 +33,7 @@ $logo-size: 250px; // Tamaño del logo
     }
 }
 
+// Estilos para el grid
 .grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr 1.1fr 1fr;
@@ -54,4 +56,3 @@ $logo-size: 250px; // Tamaño del logo
         grid-area: HomeCooking;
     }
 }
-

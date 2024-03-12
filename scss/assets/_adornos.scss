@@ -1,20 +1,22 @@
-/* CONFIGURACIÓN DEL BOTÓN CUPCAKE */
+// Definir variables
+$cupcake-size: 100px; /
+$button-size: 60px; 
+
+// Estilos para el contenedor del botón cupcake
 .cupcake-container {
-    
     text-align: center;
     margin-top: 20px;
-    width: 100px;
-    height: 100px;
-    transform: translateX(46vw) translateY(-2vw);
-    
+    width: $cupcake-size;
+    height: $cupcake-size;
+    transform: translateX(46vw) translateY(-2vw); 
 }
 
+// Estilos para el botón cupcake
 .cupcake-button {
-    margin: 0 auto;
     background-image: url('../Recursos/cupcake icon.png');
     background-color: #ffcc99;
-    width: 60px;
-    height: 60px;
+    width: $button-size;
+    height: $button-size;
     color: rgb(5, 5, 5);
     font-weight: bold;
     -webkit-text-fill-color: rgb(245, 245, 245);
@@ -23,20 +25,10 @@
     border-radius: 50%;
     cursor: pointer;
     display: flex;
-    /* Ponemos flexbox */
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    /* Centra verticalmente */
-    display: flex;
-    /* Ponemos flexbox */
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    /* Centra verticalmente */
-    background-size: 85%;
+    justify-content: center; 
+    align-items: center; 
+    background-size: 85% auto;
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
     text-align: center;
 }

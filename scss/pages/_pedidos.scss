@@ -2,18 +2,16 @@
 #h2-pedidos {
     color: white;
     font-size: large;
-    padding: 5px; // Añadimos un poco de espacio alrededor del texto
-    text-align: center; // Centramos el texto horizontalmente
+    padding: 5px; 
+    text-align: center; 
     font-family: 'Verdana', Courier, monospace;
 }
 
-
-
 .container {
+    width: 70vw;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si no caben en una fila */
 }
 
 #ingredientes {
@@ -30,43 +28,35 @@
     margin-bottom: 10px;
     color: wheat;
     font-weight: bold;
-    
-
 }
 
-/* Pedidos */
-.container {
-    width: 70vw;
-    display: flex;
-    justify-content: space-between;
+.container select,
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="tel"],
+.container textarea {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: wheat;
+    padding: 4px;
+    margin-bottom: 10px;
+}
 
-    select,
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea {
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        border-color: wheat;
-        padding: 4px;
-        margin-bottom: 10px; // Añadido margen inferior para separar los campos
-    }
+.container input[type="submit"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    background-color: hsl(338, 49%, 43%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
-    input[type="submit"] {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: wheat;
-        background-color: hsl(338, 49%, 43%);
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-//BORDES DE LOS FORMULARIOS
-    label {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: wheat;
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
+/* BORDES DE LOS FORMULARIOS */
+.container label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }

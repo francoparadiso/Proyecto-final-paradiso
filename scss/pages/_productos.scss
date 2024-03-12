@@ -4,22 +4,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    
-    margin-bottom: 20px; // Espacio entre carruseles
-    width: 300px; // Tamaño fijo para el contenedor del carrusel
-    height: 500px; // Tamaño fijo para el contenedor del carrusel
-    margin: 0 auto; // Centra el carrusel horizontalmente
-    overflow: hidden; // Evita que las imágenes sobresalgan del contenedor
-    position: relative; // Establece un contexto de posicionamiento para los elementos internos
-    border-radius: 15px; // Agregar border-radius a los carruseles
+    width: 300px; 
+    height: 500px; 
+    overflow: hidden; 
+    position: relative; 
+    border-radius: 15px; 
 }
 
 .carrusel-productos img {
     padding: 0;
-    width: 238px; // Ajustar el ancho de la imagen al contenedor
-    height: 300px; // Mantener la proporción de aspecto
-    object-fit: cover; // Permite que las imágenes conserven su relación de aspecto sin distorsionarse
-    border-radius: 15px; // Agregar border-radius a las imágenes
+    width: 238px; 
+    height: 300px; 
+    object-fit: cover; /* PARA QUE NO SE DISTORSIONE LA IMAGEN */
+    border-radius: 15px; 
     border: 2px solid wheat;
 }
 
@@ -36,7 +33,7 @@
 
 .main-productos {
     display: flex;
-    flex-wrap: wrap; // Permitir que los carruseles se envuelvan si no caben en una fila
+    flex-wrap: wrap; 
     justify-content: space-evenly;
     padding: 0;
 }

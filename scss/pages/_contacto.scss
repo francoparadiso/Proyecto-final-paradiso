@@ -1,25 +1,15 @@
-/* Contacto */
 .div-contacto {
     width: 70vw;
     display: flex;
     justify-content: space-between;
-
-    .mapa-google-earth {
-        padding: 0;
-        margin: 20px;
-        width: 600px;
-        height: 450px;
-        display: block;
-        border: 5px solid;
-        border-color: wheat;
-        border-collapse: inherit;
-    }
 }
+
 input {
     margin: 20px;
     display: block;
     margin-bottom: 5px;
 }
+
 #contactForm input[type="text"],
 #contactForm input[type="email"],
 #contactForm input[type="tel"],
@@ -27,23 +17,33 @@ input {
     color: wheat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-color: wheat;
-    padding: 4px;;
-
+    padding: 4px;
 }
 
 #contactForm input[type="submit"] {
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    color: wheat; /* Cambiar color del texto */
+    color: wheat;
     background-color: hsl(338, 49%, 43%);
-    border: none; /* Quitar borde */
-    border-radius: 5px; /* Agregar borde redondeado */
-    padding: 10px 20px; /* Agregar espacio interno */
-    cursor: pointer; // Cambia el click cuando pasa por arriba de algo
-    
-    }
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
-    #contactForm label {
-        font-family: Verdana, Geneva, Tahoma, sans-serif; /* Cambiar tipo de letra */
-        color: wheat; /* Cambiar color del texto */
-    }
+#contactForm label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+}
+
+.mapa-google-earth {
+    padding: 0;
+    margin: 20px;
+    width: 100%; 
+    height: 450px;
+    display: block;
+    border: 5px solid;
+    border-color: wheat;
+    border-collapse: inherit;
+}
+
 
