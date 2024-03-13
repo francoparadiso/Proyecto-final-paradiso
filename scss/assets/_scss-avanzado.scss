@@ -1,6 +1,22 @@
+
 // Definir variables
-$cupcake-size: 100px; /
+$cupcake-size: 100px; 
 $button-size: 60px; 
+
+//------------EXTENDS----------//
+
+
+//CONFIGURACIÓN PARA LAS IMÁGENES CON BORDES//
+.config-img {
+height: 20vw;
+border-radius: 300px;
+border: solid wheat;
+padding: 0;
+}
+// CONFIGURACIÓN DE LA FLECHA//
+
+
+
 
 // Estilos para el contenedor del botón cupcake
 .cupcake-container {
@@ -32,3 +48,19 @@ $button-size: 60px;
     background-position: center;
     text-align: center;
 }
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Tamaño y color del triángulo */
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black; /* Color del triángulo */
+    
+    /* Ajusta el tamaño y la posición de la flecha */
+    margin-top: 20px; /* Cambia según sea necesario */
+    margin-left: 20px; /* Cambia según sea necesario */
+    
+    /* Puedes ajustar la orientación de la flecha cambiando estos valores */
+    transform: rotate(45deg); /* Rota la flecha para que apunte en la dirección deseada */
+  }
+  

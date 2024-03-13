@@ -50,6 +50,9 @@
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    &:hover {
+        background-color: rgba(206, 59, 169, 0.623);
+}
 }
 
 /* BORDES DE LOS FORMULARIOS */
