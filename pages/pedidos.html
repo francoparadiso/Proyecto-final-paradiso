@@ -5,8 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="HomeCooking, hace tu propio pedido con tus gustos y la composición que desees!">
-  <meta name="keywords" content="HomeCooking, Cocina en casa, Tortas, Helados, repostería, Bombones, Pedidos, personalizados, postres ">
+  <meta name="keywords"
+    content="HomeCooking, Cocina en casa, Tortas, Helados, repostería, Bombones, Pedidos, personalizados, postres ">
   <title>Pedidos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300;400;700&family=Satisfy&display=swap"
+      rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <!-- FAVICON -->
   <link rel="shortcut icon" href="../Recursos/cupcake icon.png" type="image/x-icon">
@@ -32,73 +39,90 @@
         </li>
       </ul>
     </nav>
-
-    <h2 id="h2-pedidos">Armá tu propio pedido!</h2>
   </header>
-
-  <main class="container">
+<h2 class="h2-pedidos" >Armá tu propio pedido!</h2>
+  <main class="main-pedidos">
+    
     <!-- Menú desplegable con gustos -->
-    <form action="#" class="menu-desplegable">
-      <label for="categoria">Categoría:</label>
-      <select name="categoria" id="categoria">
-        <option value="opcion1">Tortas</option>
-        <option value="opcion2">Postres</option>
-        <option value="opcion1">Desayunos</option>
-        <option value="opcion2">Helados</option>
-        <option value="opcion2">Bombones</option>
-      </select>
 
-      <label for="base">Base:</label>
-      <select name="base" id="base">
-        <option value="opcion1">Chocolate</option>
-        <option value="opcion2">Vainilla</option>
-        <option value="opcion1">Frutilla</option>
-        <option value="opcion2">Crema</option>
-      </select>
+  <form class="menu-desplegable">
+    <label for="categoria">Categoría:</label>
+    <select name="categoria" id="categoria">
+      <option value="opcion1">Tortas</option>
+      <option value="opcion2">Postres</option>
+      <option value="opcion1">Desayunos</option>
+      <option value="opcion2">Helados</option>
+      <option value="opcion2">Bombones</option>
+    </select>
+    
+    <label for="base">Base:</label>
+    <select name="base" id="base">
+      <option value="opcion1">Chocolate</option>
+      <option value="opcion2">Vainilla</option>
+      <option value="opcion1">Frutilla</option>
+      <option value="opcion2">Crema</option>
+    </select>
+    
+    <label for="relleno">Relleno:</label>
+    <select name="relleno" id="relleno">
+      <option value="opcion1">Avellana</option>
+      <option value="opcion2">Nutella</option>
+      <option value="opcion1">Frutos Rojos</option>
+      <option value="opcion2">Merengue</option>
+    </select>
+    
+    <label for="arriba">Arriba:</label>
+    <select name="arriba" id="arriba">
+      <option value="opcion1">Frutos Secos</option>
+      <option value="opcion2">Oreo</option>
+      <option value="opcion1">Bombones</option>
+      <option value="opcion2">Salsa a elección</option>
+    </select>
+    
+    <label for="adicional">Adicional:</label>
+    <select name="adicional" id="adicional">
+      <option value="opcion1">Temáticas</option>
+      <option value="opcion2">Casamientos</option>
+      <option value="opcion1">Fiestas</option>
+      <option value="opcion2">Eventos</option>
+    </select>
+    
+    <input type="submit" value="Enviar pedido" />
+  </form>
 
-      <label for="relleno">Relleno:</label>
-      <select name="relleno" id="relleno">
-        <option value="opcion1">Avellana</option>
-        <option value="opcion2">Nutella</option>
-        <option value="opcion1">Frutos Rojos</option>
-        <option value="opcion2">Merengue</option>
-      </select>
-
-      <label for="arriba">Arriba:</label>
-      <select name="arriba" id="arriba">
-        <option value="opcion1">Frutos Secos</option>
-        <option value="opcion2">Oreo</option>
-        <option value="opcion1">Bombones</option>
-        <option value="opcion2">Salsa a elección</option>
-      </select>
-
-      <label for="adicional">Adicional:</label>
-      <select name="adicional" id="adicional">
-        <option value="opcion1">Temáticas</option>
-        <option value="opcion2">Casamientos</option>
-        <option value="opcion1">Fiestas</option>
-        <option value="opcion2">Eventos</option>
-      </select>
-
-      <input type="submit" value="Enviar pedido" />
-    </form>
-    <!-- IMAGEN DE INGREDIENTES -->
-    <ul>
-      <li>
-        <img src="../Recursos/ingredientes.jpg" id="ingredientes" alt="ingredientes">
-        <!-- TEXTO DE INGREDIENTES -->
-      <figcaption>¡Cada ingrediente cuenta una historia de amor y dedicación en nuestros desayunos y deliciosos boxes temáticos! 🎁 En nuestra cocina, cada elemento es seleccionado con mimo y cuidado para ofrecerte una experiencia gastronómica única y llena de sabor. Desde los más frescos frutos de temporada hasta los más exquisitos chocolates, cada ingrediente es parte de nuestra pasión por sorprenderte y deleitarte en cada ocasión especial. 💖
-
-        Calidad excepcional en cada detalle. 🌟 Nos enorgullece trabajar con los mejores proveedores, quienes comparten nuestra visión de excelencia y compromiso con la calidad. Cada ingrediente es elegido meticulosamente para garantizar que cumpla con nuestros estándares exigentes y te brinde la experiencia deliciosa que mereces.
+  <!-- IMAGEN DE INGREDIENTES -->
+      <ul>
+        <li>
+          <img src="../Recursos/ingredientes.jpg" id="ingredientes" alt="ingredientes">
+          <!-- TEXTO DE INGREDIENTES -->
+        </li>
+      </ul>
+      <h3 class="texto-pedidos">¡Cada ingrediente cuenta una historia de amor y dedicación en nuestros desayunos y deliciosos boxes
+      temáticos! 🎁 En nuestra cocina, cada elemento es seleccionado con mimo y cuidado para ofrecerte una
+        experiencia gastronómica única y llena de sabor. Desde los más frescos frutos de temporada hasta los más
+        exquisitos chocolates, cada ingrediente es parte de nuestra pasión por sorprenderte y deleitarte en cada
+        ocasión especial. 💖
         
-        Tu alegría es nuestra inspiración. 🌈 Nos dedicamos a crear momentos inolvidables para ti y tus seres queridos, celebrando cada ocasión especial con el encanto único de nuestros desayunos y boxes temáticos. Cada ingrediente es seleccionado pensando en tu felicidad y en el placer de compartir momentos especiales con quienes más quieres.
+        Calidad excepcional en cada detalle. 🌟 Nos enorgullece trabajar con los mejores proveedores, quienes
+        comparten nuestra visión de excelencia y compromiso con la calidad. Cada ingrediente es elegido
+        meticulosamente para garantizar que cumpla con nuestros estándares exigentes y te brinde la experiencia
+        deliciosa que mereces.
         
-        Descubre la magia en cada bocado. 🍩 Desde nuestras irresistibles tortas y postres hasta nuestros refrescantes helados frutales, cada ingrediente es una invitación a disfrutar de los placeres más dulces de la vida. Sumérgete en un mundo de sabores y texturas, donde cada detalle está diseñado para hacer de cada experiencia un verdadero festín para los sentidos.
+        Tu alegría es nuestra inspiración. 🌈 Nos dedicamos a crear momentos inolvidables para ti y tus seres
+        queridos, celebrando cada ocasión especial con el encanto único de nuestros desayunos y boxes temáticos. Cada
+        ingrediente es seleccionado pensando en tu felicidad y en el placer de compartir momentos especiales con
+        quienes más quieres.
         
-        Bienvenido a un viaje gastronómico inolvidable. 🌸 Te invitamos a descubrir la belleza y el sabor de nuestros desayunos y boxes temáticos, donde la creatividad y la pasión se unen para crear momentos inolvidables. Prepárate para deleitarte con los sabores más deliciosos y las combinaciones más sorprendentes, diseñadas con amor y dedicación para ti.</figcaption>  
-      </li>
-    </ul>
-  </main>
+        Descubre la magia en cada bocado. 🍩 Desde nuestras irresistibles tortas y postres hasta nuestros refrescantes
+        helados frutales, cada ingrediente es una invitación a disfrutar de los placeres más dulces de la vida.
+        Sumérgete en un mundo de sabores y texturas, donde cada detalle está diseñado para hacer de cada experiencia
+        un verdadero festín para los sentidos.
+        
+        Bienvenido a un viaje gastronómico inolvidable. 🌸 Te invitamos a descubrir la belleza y el sabor de nuestros
+        desayunos y boxes temáticos, donde la creatividad y la pasión se unen para crear momentos inolvidables.
+        Prepárate para deleitarte con los sabores más deliciosos y las combinaciones más sorprendentes, diseñadas con
+        amor y dedicación para ti.</h3>
+      </main>
 
 
   <!-- Cupcake button -->

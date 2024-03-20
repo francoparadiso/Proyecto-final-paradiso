@@ -187,65 +187,52 @@ body {
   border: solid wheat;
   padding: 0; }
 
-/* Pedidos */
-.container {
-  width: 70vw;
+.main-pedidos {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center; }
+  .main-pedidos .h2-pedidos {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Verdana', Courier, monospace; }
 
-#h2-pedidos {
-  color: white;
-  font-size: 30px;
-  padding: 5px;
-  text-align: center;
-  font-family: 'Verdana', Courier, monospace; }
+.menu-desplegable {
+  width: 200px; }
+  .menu-desplegable label {
+    display: block;
+    margin-bottom: 10px;
+    color: wheat;
+    font-weight: bold; }
 
-#ingredientes {
-  width: 30vw;
-  height: 20vw;
-  border-radius: 200px;
-  border: solid;
-  padding: 0;
-  border-color: wheat; }
-
-.menu-desplegable label {
-  display: block;
-  margin-bottom: 10px;
-  color: wheat;
-  font-weight: bold; }
-
-.container select,
-.container input[type="text"],
-.container input[type="email"],
-.container input[type="tel"],
-.container textarea {
+select {
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-color: wheat;
   padding: 4px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  width: 100%; }
 
-.container input[type="submit"] {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+input[type="submit"] {
   color: wheat;
   background-color: #a3385f;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer; }
-  .container input[type="submit"]:hover {
+  input[type="submit"]:hover {
     background-color: rgba(206, 59, 169, 0.623); }
 
-/* BORDES DE LOS FORMULARIOS */
-.container label {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: wheat;
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold; }
+.texto-pedidos {
+  color: white;
+  font-family: "Kalam", cursive;
+  font-style: italic;
+  font-size: larger;
+  max-width: 70vw; }
 
-.config-img, .video-receta-1, #uruguay {
+.config-img, .video-receta-1, #ingredientes, #uruguay {
   height: 20vw;
   border-radius: 300px;
   border: solid wheat;
