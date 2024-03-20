@@ -40,7 +40,22 @@
             margin-bottom: 10px;
         }
     }
+
+    // Estilos para el video iframe
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        width: 80vw; // Ancho máximo igual al de las imágenes
+        margin-bottom: 20px; // Espacio igual al de las imágenes
+    }
+
+    .video-receta-1 {
+        width: 100%; // Ocupa todo el ancho del contenedor
+        height: auto; // Altura automática según el ancho
+    }
 }
+
+
 
 /* RESPONSIVE QUIENES SOMOS*/
 

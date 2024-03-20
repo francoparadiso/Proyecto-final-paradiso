@@ -5,6 +5,7 @@ $logo-size: 250px; // Tamaño del logo
 .imagenes-principales {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     img {
@@ -16,6 +17,15 @@ $logo-size: 250px; // Tamaño del logo
         border-radius: 5px;
     }
 }
+
+.video-receta-1 {
+    width: 40vw;
+    height: 400px;
+}
+.video-receta-1 {
+    @extend .config-img;
+}
+
 
 // Estilos para las imágenes de portada
 .imagenes-portada {

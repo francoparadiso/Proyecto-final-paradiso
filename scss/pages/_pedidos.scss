@@ -1,17 +1,18 @@
 /* Pedidos */
-#h2-pedidos {
-    color: white;
-    font-size: large;
-    padding: 5px; 
-    text-align: center; 
-    font-family: 'Verdana', Courier, monospace;
-}
+
 
 .container {
     width: 70vw;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si no caben en una fila */
+    flex-wrap: wrap; 
+}
+#h2-pedidos {
+    color: white;
+    font-size: 30px;
+    padding: 5px; 
+    text-align: center; 
+    font-family: 'Verdana', Courier, monospace;
 }
 
 #ingredientes {

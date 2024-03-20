@@ -1,36 +1,17 @@
-// Importación de archivos parciales
+// Importación de archivos 
+//RESETEO
 @import './assets/reset';
+//SECCIONES DE CÓDIGO
 @import './secciones/header';
 @import './secciones/footer';
-@import './pages/productos';
-@import './pages/pedidos';
-@import './pages/quienes-somos';
+@import './secciones/h1-body';
+//PÁGINAS
 @import './pages/index';
+@import './pages/productos';
+@import './pages/quienes-somos';
+@import './pages/pedidos';
+//CONFIGURACIONES BÁSICAS Y AVANZADAS
 @import './assets/scss-avanzado';
 @import './pages/contacto';
 @import './assets/responsive';
 
-// Estilo para los títulos y configuración general
-h1, h3 {
-    display: flex;
-    text-align: center;
-    color: rgb(247, 237, 237);
-    font-family: 'Verdana', sans-serif, monospace;
-    max-width: 100vw;
-    flex-direction: column;
-}
-
-.nav h2 {
-    display: flex;
-    text-align: center;
-    color: rgb(247, 237, 237);
-    font-family: 'Verdana', sans-serif, monospace;
-    max-width: 100vw;
-    flex-direction: column;
-}
-
-//Con gradiente pulido
-body {
-    background-image: linear-gradient(palevioletred, wheat,);
-    margin: 0; 
-}
