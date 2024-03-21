@@ -4,14 +4,14 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-  
-    .h2-pedidos {
-      color: white;
-      font-size: 30px;
-      text-align: center;
-      font-family: 'Verdana', Courier, monospace;
-    }
   }
+  h2.h2-pedidos {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Verdana', Courier, monospace;
+  }
+  
     #ingredientes {
       @extend .config-img
     }
