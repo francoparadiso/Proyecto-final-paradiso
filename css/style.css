@@ -187,52 +187,6 @@ body {
   border: solid wheat;
   padding: 0; }
 
-.main-pedidos {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  align-items: center; }
-
-h2.h2-pedidos {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  font-family: 'Verdana', Courier, monospace; }
-
-.menu-desplegable {
-  width: 200px; }
-  .menu-desplegable label {
-    display: block;
-    margin-bottom: 10px;
-    color: wheat;
-    font-weight: bold; }
-
-select {
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-color: wheat;
-  padding: 4px;
-  margin-bottom: 10px;
-  width: 100%; }
-
-input[type="submit"] {
-  color: wheat;
-  background-color: #a3385f;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer; }
-  input[type="submit"]:hover {
-    background-color: rgba(206, 59, 169, 0.623); }
-
-.texto-pedidos {
-  color: white;
-  font-family: "Kalam", cursive;
-  font-style: italic;
-  font-size: larger;
-  max-width: 70vw; }
-
 .config-img, .video-receta-1, #ingredientes, #uruguay {
   height: 20vw;
   border-radius: 300px;
@@ -266,6 +220,64 @@ input[type="submit"] {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center; }
+
+.main-pedidos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row-reverse; }
+
+h2.h2-pedidos {
+  color: wheat;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Verdana', Courier, monospace;
+  margin: 0;
+  width: 100%; }
+
+.menu-desplegable {
+  width: 200px; }
+  .menu-desplegable label {
+    display: block;
+    margin-bottom: 10px;
+    color: wheat;
+    font-weight: bold;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    font-size: larger; }
+  .menu-desplegable select {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: wheat;
+    padding: 4px;
+    margin-bottom: 10px;
+    width: 100%; }
+  .menu-desplegable input[type="submit"] {
+    color: wheat;
+    background-color: #a3385f;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer; }
+    .menu-desplegable input[type="submit"]:hover {
+      background-color: rgba(206, 59, 169, 0.623); }
+
+.texto-pedidos {
+  color: white;
+  font-family: "Kalam", cursive;
+  font-style: italic;
+  font-size: larger;
+  max-width: 70vw;
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .menu-desplegable,
+  #ingredientes {
+    width: 75%; } }
 
 .div-contact {
   width: 80vw;
@@ -346,6 +358,40 @@ input {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: wheat;
   font-size: larger; }
+
+.config-img, .video-receta-1, #ingredientes, #uruguay {
+  height: 20vw;
+  border-radius: 300px;
+  border: solid wheat;
+  padding: 0; }
+
+.cupcake-container {
+  text-align: center;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  transform: translateX(46vw) translateY(-2vw); }
+
+.cupcake-button {
+  background-image: url("../Recursos/cupcake icon.png");
+  background-color: #ffcc99;
+  width: 60px;
+  height: 60px;
+  color: #050505;
+  font-weight: bold;
+  text-decoration: solid;
+  -webkit-text-fill-color: whitesmoke;
+  -webkit-text-stroke: 1px black;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 85% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center; }
 
 /* RESPONSIVE DEL INDEX */
 @media (max-width: 768px) {

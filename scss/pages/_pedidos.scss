@@ -1,58 +1,80 @@
-.main-pedidos {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  h2.h2-pedidos {
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Verdana', Courier, monospace;
-  }
-  
-    #ingredientes {
-      @extend .config-img
-    }
-  
-    .menu-desplegable {
-      width: 200px;
-      label {
-        display: block;
-        margin-bottom: 10px;
-        color: wheat;
-        font-weight: bold;
-      }
-}
-  
-      select {
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        border-color: wheat;
-        padding: 4px;
-        margin-bottom: 10px;
-        width: 100%;
-      }
-  
-      input[type="submit"] {
-        color: wheat;
-        background-color: hsl(338, 49%, 43%);
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        cursor: pointer;
-        &:hover {
-          background-color: rgba(206, 59, 169, 0.623);
-        }
-      }
-  
+@import '../assets/scss-avanzado';
 
-  
-    .texto-pedidos {
-      color: white;
-      font-family: "Kalam", cursive;
-      font-style: italic;
-      font-size: larger;
-      max-width: 70vw;
+.main-pedidos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row-reverse;
+}
+
+h2.h2-pedidos {
+  color: wheat;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Verdana', Courier, monospace;
+  margin: 0;
+  width: 100%;
+}
+
+#ingredientes {
+  @extend .config-img
+}
+
+.menu-desplegable {
+  width: 200px;
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: wheat;
+    font-weight: bold;
+    text-align: left;
+    font-family: $font-verdana;
+    color: $color-wheat;
+    font-size: $font-size-large;
+    
+  }
+
+
+  select {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: wheat;
+    padding: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    color: wheat;
+    background-color: hsl(338, 49%, 43%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(206, 59, 169, 0.623);
     }
+  }
+}
+
+.texto-pedidos {
+  color: white;
+  font-family: "Kalam", cursive;
+  font-style: italic;
+  font-size: larger;
+  max-width: 70vw;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .menu-desplegable,
+  #ingredientes {
+    width: 75%;
+  }
+}
