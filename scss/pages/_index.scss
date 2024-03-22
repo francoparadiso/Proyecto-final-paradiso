@@ -1,5 +1,4 @@
-// Definir variables
-$logo-size: 250px; // Tamaño del logo
+@import '../assets/scss-avanzado';
 
 // Estilos para las imágenes principales
 .imagenes-principales {
@@ -42,6 +41,14 @@ $logo-size: 250px; // Tamaño del logo
         border-radius: 5px;
     }
 }
+.imagenes-portada img {
+    transition: transform 0.3s ease-in-out; /* Transición SUAVE*/
+  }
+  
+  .imagenes-portada img:hover {
+    transform: scale(1.05); 
+  }
+  
 
 // Estilos para el grid
 .grid {
