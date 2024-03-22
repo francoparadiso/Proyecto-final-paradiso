@@ -25,6 +25,11 @@
     @extend .config-img;
 }
 
+.video-container:hover iframe {
+    transform: scale(1.1); /* Cambiar el valor para ajustar el nivel de zoom */
+    transition: transform 0.3s ease; /* Duración y tipo de transición */
+  }
+
 
 // Estilos para las imágenes de portada
 .imagenes-portada {
@@ -73,3 +78,4 @@
         grid-area: HomeCooking;
     }
 }
+
