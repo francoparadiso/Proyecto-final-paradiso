@@ -28,6 +28,7 @@
 }
 
 .mapa-google-earth { 
+    @extend .config-img;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +42,7 @@
     border: 5px solid;
     border-color: $color-wheat;
     border-collapse: inherit;
+    
     iframe.mapa-google-earth {
         margin: auto;
         display: block;

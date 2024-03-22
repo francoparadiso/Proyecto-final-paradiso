@@ -187,7 +187,7 @@ body {
   border: solid wheat;
   padding: 0; }
 
-.config-img, .video-receta-1, #ingredientes, #uruguay {
+.config-img, .video-receta-1, #ingredientes, .mapa-google-earth, #uruguay {
   height: 20vw;
   border-radius: 300px;
   border: solid wheat;
@@ -279,6 +279,59 @@ h2.h2-pedidos {
   #ingredientes {
     width: 75%; } }
 
+.main-recetas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  /* Centra el contenido horizontalmente */
+  justify-content: center;
+  /* Centra el contenido verticalmente */ }
+
+.tabla-recetas {
+  margin-top: 20px; }
+  .tabla-recetas h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+  .tabla-recetas h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat; }
+  .tabla-recetas table {
+    width: 30%;
+    border-collapse: collapse; }
+    .tabla-recetas table th,
+    .tabla-recetas table td {
+      border: 1px solid #ccc;
+      padding: 4px;
+      color: wheat;
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: wheat; }
+    .tabla-recetas table th {
+      background-color: #e021a7; }
+    .tabla-recetas table td {
+      background-color: rgba(206, 59, 169, 0.623);
+      /* Cambiar el color de fondo de las celdas */ }
+  .tabla-recetas p {
+    margin-top: 10px; }
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white; }
+
+p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white; }
+
 .div-contact {
   width: 80vw;
   display: flex;
@@ -359,7 +412,7 @@ input {
   color: wheat;
   font-size: larger; }
 
-.config-img, .video-receta-1, #ingredientes, #uruguay {
+.config-img, .video-receta-1, #ingredientes, .mapa-google-earth, #uruguay {
   height: 20vw;
   border-radius: 300px;
   border: solid wheat;
