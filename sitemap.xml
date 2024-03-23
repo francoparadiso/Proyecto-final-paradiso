@@ -8,28 +8,33 @@
 
 
 <url>
-  <loc>https://francoparadiso.github.io/Proyecto-final-paradiso/index.html</loc>
-  <lastmod>2024-03-11T21:20:16+00:00</lastmod>
+  <loc>https://francoparadiso.github.io/Home-Cooking/</loc>
+  <lastmod>2024-02-26T21:06:17+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://francoparadiso.github.io/Proyecto-final-paradiso/pages/productos.html</loc>
-  <lastmod>2024-03-11T21:20:15+00:00</lastmod>
+  <loc>https://francoparadiso.github.io/Home-Cooking/index.html</loc>
+  <lastmod>2024-02-26T21:06:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://francoparadiso.github.io/Proyecto-final-paradiso/pages/quienes-somos.html</loc>
-  <lastmod>2024-03-11T21:20:16+00:00</lastmod>
+  <loc>https://francoparadiso.github.io/Home-Cooking/pages/productos.html</loc>
+  <lastmod>2024-02-26T21:06:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://francoparadiso.github.io/Proyecto-final-paradiso/pages/pedidos.html</loc>
-  <lastmod>2024-03-11T21:20:16+00:00</lastmod>
+  <loc>https://francoparadiso.github.io/Home-Cooking/pages/quienes-somos.html</loc>
+  <lastmod>2024-02-26T21:06:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://francoparadiso.github.io/Proyecto-final-paradiso/pages/contacto.html</loc>
-  <lastmod>2024-03-11T21:20:16+00:00</lastmod>
+  <loc>https://francoparadiso.github.io/Home-Cooking/pages/pedidos.html</loc>
+  <lastmod>2024-02-26T21:06:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://francoparadiso.github.io/Home-Cooking/pages/contacto.html</loc>
+  <lastmod>2024-02-26T21:06:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
