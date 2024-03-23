@@ -1,7 +1,7 @@
 .header {
     display: flex;
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; 
+    align-items: center; 
     margin: 0 auto;
     font-family: 'Verdana', sans-serif, monospace;
     background-color: hsl(338, 49%, 43%);
@@ -12,7 +12,9 @@
     border-color: wheat;
 
     h1 {
-        border-radius: inherit; // Hereda el radio de borde de .header
+        border-radius: inherit; 
+        font-weight: 500;
+        
     }
 
     ul {
@@ -47,3 +49,5 @@
 #logo-index {
     border-radius: 100px;
 }
+
+  
