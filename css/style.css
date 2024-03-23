@@ -608,3 +608,15 @@ label {
 @media only screen and (max-width: 480px) {
   .mapa-google-earth {
     height: 200px; } }
+
+@media only screen and (max-width: 480px) {
+  .tabla-texto {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40vw; }
+  .main-recetas {
+    margin: auto;
+    padding: auto; }
+  .main-recetas p {
+    display: none; } }
