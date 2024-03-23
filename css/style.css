@@ -124,6 +124,9 @@ body {
     border-color: wheat;
     border-radius: 5px; }
 
+a {
+  text-decoration: none; }
+
 .video-receta-1 {
   width: 40vw;
   height: 400px; }
@@ -210,6 +213,9 @@ body {
 
 .carrusel-productos img:hover {
   transform: scale(1.05); }
+
+a {
+  text-decoration: none; }
 
 /* Quienes somos? */
 .satisfy-regular {
