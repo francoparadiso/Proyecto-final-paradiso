@@ -1,6 +1,6 @@
 @import '../assets/scss-avanzado';
 
-// Estilos para las imágenes principales
+/* Estilos para las imágenes principales */
 .imagenes-principales {
     display: flex;
     align-items: flex-end;
@@ -15,52 +15,74 @@
         border-color: wheat;
         border-radius: 5px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease-in-out; /* Transición suave */
     }
 }
+
 a {
     text-decoration: none;
-  }
+}
 
 .video-receta-1 {
+    @extend .config-img;
+    border: 5px solid wheat;
     width: 40vw;
     height: 400px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
-.video-receta-1 {
-    @extend .config-img;
+    border-radius: 10px;
+    
 }
 
 .video-container:hover iframe {
-    transform: scale(1.1); /* Cambiar el valor para ajustar el nivel de zoom */
-    transition: transform 0.3s ease; /* Duración y tipo de transición */
-  }
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
 
-
-// Estilos para las imágenes de portada
+/* Estilos para las imágenes de portada */
 .imagenes-portada {
     position: relative;
-
-    figcaption {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: wheat;
-        font-size: large;
-        padding: 5px;
-        text-align: center;
-        font-family: 'Verdana', Courier, monospace;
-        border-radius: 5px;
-    }
 }
-.imagenes-portada img {
-    transition: transform 0.3s ease-in-out; /* Transición SUAVE*/
-  }
-  
-  .imagenes-portada img:hover {
-    transform: scale(1.05); 
-  }
-  
 
-// Estilos para el grid
+.figcaption-especial-2 {
+    background-color: hsl(338, 49%, 43%);
+}
+
+.figcaption-especial {
+    background-color: palevioletred;
+}
+
+figcaption.figcaption-especial-2,
+figcaption.figcaption-especial {
+    width: 100%;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    text-align: center;
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.figcaption {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: wheat;
+    font-size: large;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Verdana', Courier, monospace;
+    border-radius: 5px;
+}
+
+#quienes-somos {
+    border-radius: 300px;
+}
+
+.imagenes-portada img:hover {
+    transform: scale(1.05); 
+}
+
+/* Estilos para el grid */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr 1.1fr 1fr;
@@ -83,4 +105,3 @@ a {
         grid-area: HomeCooking;
     }
 }
-

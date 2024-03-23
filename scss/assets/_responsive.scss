@@ -1,6 +1,5 @@
 /* RESPONSIVE DEL INDEX */
 @media (max-width: 768px) {
-
     #links-header,
     .grid {
         grid-template-columns: 1fr;
@@ -41,7 +40,6 @@
         }
     }
 
-    // Estilos para el video iframe
     .video-container {
         position: relative;
         overflow: hidden;
@@ -55,10 +53,7 @@
     }
 }
 
-
-
 /* RESPONSIVE QUIENES SOMOS*/
-
 @media only screen and (max-width: 768px) {
     #descripcion-familia {
         max-width: 90vw; 
@@ -83,7 +78,7 @@
     }
 }
 
-//QUERY DELCONTACTO
+/* QUERY DEL CONTACTO */
 @media only screen and (max-width: 768px) {
     .div-contacto {
         flex-direction: column; 

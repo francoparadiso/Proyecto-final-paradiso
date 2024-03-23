@@ -15,13 +15,13 @@ h2.h2-pedidos {
   font-size: 30px;
   text-align: center;
   font-family: 'Verdana', Courier, monospace;
-  margin: 0;
+  margin: auto;
   width: 100%;
 }
 
 #ingredientes {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  @extend .config-img
+  @extend .config-img;
 }
 
 .menu-desplegable {
@@ -33,12 +33,9 @@ h2.h2-pedidos {
     color: wheat;
     font-weight: bold;
     text-align: left;
-    font-family: $font-verdana;
-    color: $color-wheat;
-    font-size: $font-size-large;
-    
+    font-family: 'Verdana', sans-serif;
+    font-size: $font-size-large; 
   }
-
 
   select {
     color: black;
@@ -65,7 +62,7 @@ h2.h2-pedidos {
 
 .texto-pedidos {
   color: white;
-  font-family: "Kalam", cursive;
+  font-family: 'Kalam', cursive;
   font-style: italic;
   font-size: larger;
   max-width: 70vw;
@@ -73,7 +70,6 @@ h2.h2-pedidos {
 }
 
 @media (max-width: 768px) {
-
   .menu-desplegable,
   #ingredientes {
     width: 75%;

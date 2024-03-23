@@ -1,4 +1,4 @@
-/* Quienes somos? */
+/* Estilos para la página Quiénes somos */
 .satisfy-regular {
     font-family: "Satisfy", cursive;
     font-weight: 400;
@@ -7,12 +7,12 @@
 #descripcion-familia {
     color: white;
     font-family: "Kalam", cursive;
-    font-weight: 300, bold;
-    font-style: italic; 
+    font: {
+        weight: bold; 
+        style: italic; 
+    }
     max-width: 70vw;
-    display: flex;
     font-size: larger;
-    
 }
 
 .grid-quienes-somos {
@@ -29,7 +29,11 @@
 
 #foto-rochanos {
     height: 20vw;
-    border-radius: 300px;
-    border: solid wheat;
+    border-radius: 50%; 
+    border: {
+        width: 2px; 
+        color: wheat;
+        style: solid;
+    }
     padding: 0;
 }

@@ -3,30 +3,39 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
+
+    h2, p {
+        color: white;
+        font-family: "Kalam", cursive;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+        max-width: 70vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        margin-top: 60px;
+        font-weight: 350;
+    }
 }
+
 .tabla-texto {
-    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    
-
 }
 
 .tabla-recetas {
     margin-top: 20px;
-    
 
     h4 {
         color: white;
         font-family: "Kalam", cursive;
-        font-weight: 300, bold;
-        font-style: italic; 
+        font-style: italic;
         font-size: 20px;
-        max-width: 70vw;
-        display: flex;
-        font-size: larger;;
     }
 
     h3 {
@@ -41,14 +50,11 @@
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
         border-collapse: collapse;
 
-        th,
-        td {
+        th, td {
             border: 1px solid #ccc;
             color: wheat;
             font-size: 20px;
-            margin-bottom: 10px;
             font-family: "Kalam", cursive;
-            color: wheat;
         }
 
         th {
@@ -66,47 +72,14 @@
     }
 }
 
-h2 {
-    color: white;
-    font-family: "Kalam", cursive;
-    font-weight: 300, bold;
-    font-style: italic; 
-    font-size: 20px;
-    max-width: 70vw;
-    display: flex;
-    font-size: larger;
-    justify-content: center;
-}
-
-p {
-    margin-top: 60px;
-    color: white;
-    font-family: "Kalam", cursive;
-    font-weight: 350, bold;
-    font-style: italic; 
-    font-size: 20px;
-    max-width: 40vw;
-    display: flex;
-    font-size: larger;
-
-}
-
- // Estilos para el video iframe
- .videos-recetas {
+.videos-recetas {
     position: relative;
     overflow: hidden;
-    width: 80vw; 
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    width: 80vw;
     height: 30vw;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     border-radius: 35px;
-    border: 300px, solid, wheat;
-    @extend 
-        .config-img;
-}
-
-
-.videos-recetas {
-    
-    width: 100%;  
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border: solid wheat;
+    @extend .config-img; 
 }
