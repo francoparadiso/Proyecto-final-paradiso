@@ -7,6 +7,7 @@
   border-color: black; }
 
 .header {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +54,8 @@
   display: flex;
   justify-content: space-evenly;
   border-radius: 15px;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
   .footer img {
     height: 60px; }
 
@@ -66,6 +68,7 @@ h1, h3 {
   flex-direction: column; }
 
 .nav h2 {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   text-align: center;
   color: #f7eded;
@@ -75,7 +78,8 @@ h1, h3 {
 
 body {
   background-image: linear-gradient(palevioletred, wheat);
-  margin: 0; }
+  margin: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 .config-img, .video-receta-1, #ingredientes, .videos-recetas, .mapa-google-earth, #uruguay {
   height: 20vw;
@@ -122,14 +126,16 @@ body {
     border: 2px solid black;
     padding: 0;
     border-color: wheat;
-    border-radius: 5px; }
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 a {
   text-decoration: none; }
 
 .video-receta-1 {
   width: 40vw;
-  height: 400px; }
+  height: 400px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 .video-container:hover iframe {
   transform: scale(1.1);
@@ -183,6 +189,7 @@ a {
   border-radius: 15px; }
 
 .carrusel-productos img {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   padding: 0;
   width: 238px;
   height: 300px;
@@ -297,6 +304,9 @@ h2.h2-pedidos {
   margin: 0;
   width: 100%; }
 
+#ingredientes {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
+
 .menu-desplegable {
   width: 200px; }
   .menu-desplegable label {
@@ -369,6 +379,7 @@ h2.h2-pedidos {
     color: wheat; }
   .tabla-recetas table {
     width: 20vw;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     border-collapse: collapse; }
     .tabla-recetas table th,
     .tabla-recetas table td {
@@ -412,6 +423,7 @@ p {
   position: relative;
   overflow: hidden;
   width: 80vw;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   height: 30vw;
   margin-bottom: 20px;
   border-radius: 35px;
@@ -445,6 +457,7 @@ p {
   justify-self: center; }
 
 .mapa-google-earth {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -499,6 +512,9 @@ input {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: wheat;
   font-size: larger; }
+
+#uruguay {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 .config-img, .video-receta-1, #ingredientes, .videos-recetas, .mapa-google-earth, #uruguay {
   height: 20vw;
