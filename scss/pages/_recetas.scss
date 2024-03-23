@@ -1,19 +1,31 @@
 .main-recetas {
+    margin: 50px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-  align-items: center; /* Centra el contenido horizontalmente */
-  justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; 
+    justify-content: center; 
+}
+.tabla-texto {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    
+
 }
 
 .tabla-recetas {
     margin-top: 20px;
 
     h4 {
-        font-size: 20px;
-        margin-bottom: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
+        font-family: "Kalam", cursive;
+        font-weight: 300, bold;
+        font-style: italic; 
+        font-size: 20px;
+        max-width: 70vw;
+        display: flex;
+        font-size: larger;;
     }
 
     h3 {
@@ -24,17 +36,16 @@
     }
 
     table {
-        width: 30%;
+        width: 20vw;
         border-collapse: collapse;
 
         th,
         td {
             border: 1px solid #ccc;
-            padding: 4px;
             color: wheat;
             font-size: 20px;
             margin-bottom: 10px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: "Kalam", cursive;
             color: wheat;
         }
 
@@ -44,25 +55,54 @@
 
         td {
             background-color: rgba(206, 59, 169, 0.623);
-            /* Cambiar el color de fondo de las celdas */
         }
     }
 
     p {
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
 h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    font-family: "Kalam", cursive;
+    font-weight: 300, bold;
+    font-style: italic; 
+    font-size: 20px;
+    max-width: 70vw;
+    display: flex;
+    font-size: larger;
+    justify-content: center;
 }
 
 p {
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
     color: white;
+    font-family: "Kalam", cursive;
+    font-weight: 350, bold;
+    font-style: italic; 
+    font-size: 20px;
+    max-width: 40vw;
+    display: flex;
+    font-size: larger;
+
+}
+
+ // Estilos para el video iframe
+ .videos-recetas {
+    position: relative;
+    overflow: hidden;
+    width: 80vw; 
+    height: 30vw;
+    margin-bottom: 20px; 
+    border-radius: 35px;
+    border: 300px, solid, wheat;
+    @extend 
+        .config-img;
+}
+
+
+.videos-recetas {
+    width: 100%;  
 }

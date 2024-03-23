@@ -78,9 +78,9 @@ body {
   background-image: linear-gradient(palevioletred, wheat);
   margin: 0; }
 
-.config-img, .video-receta-1, #ingredientes, .mapa-google-earth, #uruguay {
+.config-img, .video-receta-1, #ingredientes, .videos-recetas, .mapa-google-earth, #uruguay {
   height: 20vw;
-  border-radius: 300px;
+  border-radius: 100px;
   border: solid wheat;
   padding: 0; }
 
@@ -241,9 +241,9 @@ body {
   border: solid wheat;
   padding: 0; }
 
-.config-img, .video-receta-1, #ingredientes, .mapa-google-earth, #uruguay {
+.config-img, .video-receta-1, #ingredientes, .videos-recetas, .mapa-google-earth, #uruguay {
   height: 20vw;
-  border-radius: 300px;
+  border-radius: 100px;
   border: solid wheat;
   padding: 0; }
 
@@ -334,57 +334,86 @@ h2.h2-pedidos {
     width: 75%; } }
 
 .main-recetas {
+  margin: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  /* Centra el contenido horizontalmente */
-  justify-content: center;
-  /* Centra el contenido verticalmente */ }
+  justify-content: center; }
+
+.tabla-texto {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between; }
 
 .tabla-recetas {
   margin-top: 20px; }
   .tabla-recetas h4 {
+    color: white;
+    font-family: "Kalam", cursive;
+    font-weight: 300, bold;
+    font-style: italic;
     font-size: 20px;
-    margin-bottom: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white; }
+    max-width: 70vw;
+    display: flex;
+    font-size: larger; }
   .tabla-recetas h3 {
     font-size: 20px;
     margin-bottom: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: wheat; }
   .tabla-recetas table {
-    width: 30%;
+    width: 20vw;
     border-collapse: collapse; }
     .tabla-recetas table th,
     .tabla-recetas table td {
       border: 1px solid #ccc;
-      padding: 4px;
       color: wheat;
       font-size: 20px;
       margin-bottom: 10px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: "Kalam", cursive;
       color: wheat; }
     .tabla-recetas table th {
       background-color: #e021a7; }
     .tabla-recetas table td {
-      background-color: rgba(206, 59, 169, 0.623);
-      /* Cambiar el color de fondo de las celdas */ }
+      background-color: rgba(206, 59, 169, 0.623); }
   .tabla-recetas p {
-    margin-top: 10px; }
+    margin-top: 30px;
+    margin-bottom: 30px; }
 
 h2 {
+  color: white;
+  font-family: "Kalam", cursive;
+  font-weight: 300, bold;
+  font-style: italic;
   font-size: 20px;
-  margin-bottom: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white; }
+  max-width: 70vw;
+  display: flex;
+  font-size: larger;
+  justify-content: center; }
 
 p {
+  margin-top: 60px;
+  color: white;
+  font-family: "Kalam", cursive;
+  font-weight: 350, bold;
+  font-style: italic;
   font-size: 20px;
-  margin-bottom: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white; }
+  max-width: 40vw;
+  display: flex;
+  font-size: larger; }
+
+.videos-recetas {
+  position: relative;
+  overflow: hidden;
+  width: 80vw;
+  height: 30vw;
+  margin-bottom: 20px;
+  border-radius: 35px;
+  border: 300px, solid, wheat; }
+
+.videos-recetas {
+  width: 100%; }
 
 .div-contact {
   width: 80vw;
@@ -466,9 +495,9 @@ input {
   color: wheat;
   font-size: larger; }
 
-.config-img, .video-receta-1, #ingredientes, .mapa-google-earth, #uruguay {
+.config-img, .video-receta-1, #ingredientes, .videos-recetas, .mapa-google-earth, #uruguay {
   height: 20vw;
-  border-radius: 300px;
+  border-radius: 100px;
   border: solid wheat;
   padding: 0; }
 
